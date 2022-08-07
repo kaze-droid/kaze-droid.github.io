@@ -1,0 +1,106 @@
+body, html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+html {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+body {
+    height: 200vh;
+}
+
+/* First half of the page */
+/* Src: "https://papers.co/desktop/vd92-shining-aqua-black-abstract-art-pattern/#google_vignette" */
+.custom-bg {
+    background: url(../images/background.jpg);
+    background-size: cover;
+}
+
+.custom-circle {
+    border-radius: 3rem;
+    width: 8rem;
+    height: 5rem;
+    box-shadow: 0px 0px 0 red;
+}
+
+.custom-circle:hover {
+    box-shadow: 8px 2px 5px rgb(60,255,0);
+    transition: box-shadow 1.5s;
+}
+
+.custom-blur {
+    /* Opacity of rgba has to be less than one to blur */
+    /* backdrop-filter lets the blurring effect be applied behind an element. This allows the background image to be blurred */
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    height: 100vh;
+}
+
+/* Second half of the page */
+
+/* Src: https://www.vectorstock.com/royalty-free-vector/black-background-vector-21270457 */
+.custom-bg_2 {
+    background: url(../images/background_2.jpg);
+    background-size: cover;
+}
+
+.custom-circle_2 {
+    border-radius: 3rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+.custom-invisible {
+    visibility: hidden;
+}
+
+/* Use to adjust the size of the bootstrap icons */
+.custom-smaller {
+    font-size: 150% !important;
+}
+
+/* Adjust the hr for aesthetics */
+hr {
+    height: 3px !important;
+    /* Defualt hr opacity is .25 */
+    opacity: 1 !important;
+}
+
+/* Set widths for the progress bars */
+
+.w-30 {
+    width: 30%;
+}
+
+.w-70 {
+    width: 70%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+.h-40 {
+    height: 40%;
+}
+
+/* Button to explore the main content */
+
+.explore_button {
+    width: 12rem;
+}
+
+i.bi {
+    font-size: 300%;
+}

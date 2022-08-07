@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Javascripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- JS files -->
+    <script src="../js/script.js"></script>
+    <script src="../js/calendar.js" defer></script>
+    <script src="../js/date.js"></script>
+    <title>Experience</title>
+    <!-- Src: https://depositphotos.com/vector-images/letter-r-logo.html -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body data-bs-spy="scroll">
+    <!-- Horizontal navigation for main content -->
+    <nav class="navbar navbar-dark bg-dark custom-position">
+        <!-- removed the data-bs-toggle and data-bs-target so that the 'show' class can be added without the 'collapsing' class -->
+      <div class="d-flex flex-row justify-content-between w-100">
+        <div class="d-flex flex-row">
+            <!-- This icon opens up the vertical navigation. It is only visible on large screens -->
+            <div class="col">
+                <button class="navbar-toggler nav-item mx-3 d-none d-lg-block" type="button" onclick="position_change()">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col">
+                <a class="nav-link mx-3" href="home.html"><span><i class="bi bi-house-door-fill text-white"></i></span></a>
+            </div>
+        </div>
+        <!-- The other sections -->
+        <div class="d-flex flex-row">
+            <a class="nav-link text-white text-deocration-none" href="index.html"><span>ABOUT</span></a>
+            <a class="nav-link text-white text-deocration-none" href="careers.html"><span>CAREER</span></a>
+            <a class="nav-link text-white text-deocration-none" href="feedback.html"><span>FEEDBACK</span></a>
+        </div>
+      </div>
+   </nav>
+    
+   <!-- Vertical navigation with scrollspy -->
+    <div class="row h-100">
+        <div class="col-2 collapse custom-vertnav">
+            <div class="p-4">
+                <hr class="custom-checker">
+                <div class="container px-0">
+                    <div class="custom-vertnavcontent">
+                        <h5 class="text-white h2">Navigation</h5>
+                        <ul class="nav-pills">
+                            <li class="list-unstyled nav-item"><a class="nav-link" href="#scrollspyHeading1"><span class="custom-navitem h5">Food Courts</span></a></li>
+                            <li class="list-unstyled nav-item"><a class="nav-link" href="#scrollspyHeading2"><span class="custom-navitem h5">Courses</span></a></li>
+                            <li class="list-unstyled nav-item"><a class="nav-link" href="#scrollspyHeading3"><span class="custom-navitem h5">Exams</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-bodyBG col-12 scrollspy" data-bs-smooth-scroll="true" data-bs-offset="0" tabindex="0">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="display-1 ms-2 ms-lg-3"><strong><u>SP Experience</u></strong></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="row">
+                    <div class="col-11">
+                        <div class="container-fluid mx-1 mt-2 mb-1 p-0 ms-3 ms-lg-5">
+                            <h4 class="display-2 mb-4" id="scrollspyHeading1">Food Courts in SP</h4>
+                            <p class="h5 ms-2 ms-lg-3">There is a total of 6 different food courts and 2 cafes in SP</p>
+                            <br>
+                            <!-- Carousel of some of the food courts in SP -->
+                            <p class="display-6 ms-2 ms-lg-3">Here are some of the food courts and cafes that my friend and I have visited before:</p>
+                            <div class="row justify-content-center">
+                                <div id="carouselIndicators" class="carousel slide w-25 h-25" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <!-- Aria label is used to label the slides-->
+                                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                        <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="../images/foodcourt1-jpg.jpg" class="d-block w-100" alt="Foodcourt 1">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Food Court 1</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="carousel-item">
+                                            <img src="../images/fc3-jpg.jpg" class="d-block w-100" alt="Foodcourt 3">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Food Court 3</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="carousel-item">
+                                            <img src="../images/fc5-jpg.jpg" class="d-block w-100" alt="Foodcourt 5">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Food Court 5</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="carousel-item">
+                                            <img src="../images/fc5-bangdeli-jpg.jpg" class="d-block w-100" alt="Bangdeli at Foodcourt 5">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Food Court 5 Bangdeli</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="carousel-item">
+                                            <img src="../images/fc5-kfc-jpg.jpg" class="d-block w-100" alt="KFC at Foodcourt 5">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Food Court 5 KFC</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="carousel-item">
+                                            <img src="../images/fc5-starbucks-jpg.jpg" class="d-block w-100" alt="Starbucks at Foodcourt 5">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Food Court 5 Starbucks</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="carousel-item">
+                                            <img src="../images/hilltop-cafe-jpg.jpg" class="d-block w-100" alt="Hilltop Haven">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <p>Hilltop Haven</p>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>        
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-11">
+                        <div class="container-fluid mx-1 mt-2 mb-1 ms-0 ms-3 ms-lg-5">
+                            <h4 class="display-2 mb-4" id="scrollspyHeading2">Courses in SP SOC</h4>
+                            <p class="h5 ms-2 ms-lg-3">SP has multiple diplomas for students interested in pursuing a career in Computing</p>
+                            <br>
+                            <p class="h5 ms-2 ms-lg-3">Each of these courses were crafted in respect to the four key frontier technology capabilities that Singapore will be developing namely:</p>
+                            <ul class="h5 ms-4">
+                                <li>Cyber Security</li>
+                                <li>Internet-Of-Things</li>
+                                <li>Immersive Media</li>
+                                <li>Artificial Intelligence and Data Science</li>
+                            </ul>
+                            <p class="display-6 ms-2 ms-lg-3">Here is an overview of the diplomas in SP's School of Computing:</p>
+                            <!-- Cards of the SOC courses -->
+                            <div class="row justify-content-center">
+                                <div class="col-10">
+                                    <div class="row">
+                                        <div class="col-sm-9 col-md-6 col-lg-4 my-2">
+                                            <div class="card border border-dark custom-cardBg h-100">
+                                                <img class="card-img-top" src="../images/SP_DAAA.png" alt="Picture of DAAA">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">DAAA (Diploma in Applied AI and Analytics)</h5>
+                                                    <p class="card-text d-none d-md-block">In a world where AI & data analytics is the key under-pinning technologies for transforming every industry, Diploma in Applied AI and Analytics (DAAA) offers modules heavily focused on Machine Learning, Deep Learning and Data Visualisation to help students become a part of the revolution.</p>
+                                                    <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/applied-AI-and-analytics/overview" class="btn btn-success" target="_blank">See more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9 col-md-6 col-lg-4 my-2">
+                                            <div class="card border border-dark custom-cardBg h-100">
+                                                <img class="card-img-top" src="../images/SP_DISM.png" alt="Picture of DAAA">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">DISM (Diploma In Infocom Security Management)</h5>
+                                                    <p class="card-text d-none d-md-block">Being a Diploma in Infocomm Security Management (DISM) student gives you the competitive edge for a boost in your future studies and career. You can look forward to an interesting curriculum that covers offensive attacks, defensive methods and  investigative skills.</p>
+                                                    <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/infocomm-security-management/overview" class="btn btn-success" target="_blank">See more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9 col-md-6 col-lg-4 my-2">
+                                            <div class="card border border-dark custom-cardBg h-100">
+                                                <img class="card-img-top" src="../images/SP_DCITP.png" alt="Picture of DAAA">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">DCITP (Diploma in Common IT Programme)</h5>
+                                                    <p class="card-text d-none d-md-block">The Common ICT Programme (DCITP) is designed to help students passionate about Information Technology (IT) but undecided about which IT course to take. The programme offers fundamental IT modules to give students an insight into what interests them.</p>
+                                                    <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/common-ict-programme/overview" class="btn btn-success" target="_blank">See more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-9 col-md-6 col-lg-4 my-2">
+                                            <div class="card border border-dark custom-cardBg h-100">
+                                                <img class="card-img-top" src="../images/SP_DIT.png" alt="Picture of DAAA">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">DIT (Diploma in Information Technology)</h5>
+                                                    <p class="card-text d-none d-md-block">The Diploma in Information Technology (DIT) course is positioned to focus on Software & Applications development with three specialist tracks: Software Development, User Experience (UX) and Immersive Simulation.</p>
+                                                    <a href="https://www.sp.edu.sg/soc/courses/full-time-diplomas/information-technology/overview" class="btn btn-success" target="_blank">See more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-11">
+                        <div class="container-fluid mx-1 mt-2 mb-1 ms-3 ms-lg-5">
+                            <h4 class="display-2 mb-4" id="scrollspyHeading3">Exams</h4>
+                            <p class="h5 ms-2 ms-lg-3">Like every other academic institution, SP has its fair share of exams. </p>
+                            <p class="h5 ms-2 ms-lg-3">Currently in August, students are busy preparing for their End Semester Tests (ESTs)</p>
+                            <br>
+                            <!-- EST Countdown -->
+                            <div class="display-4">Countdown to end of EST:</div>
+                            <div id="date_to_EST" class="ms-4 mt-3 col-11 d-block d-lg-flex h-25 justify-content-around text-center align-middle border border-dark">
+                                <div class="display-4 h3 days_countdown"><p id="days"></p>DAYS</div>
+                                <div class="display-4 h3 days_countdown">:</div>
+                                <div class="display-4 h3 days_countdown"><p id="hours"></p>HOURS</div>
+                                <div class="display-4 h3 days_countdown">:</div>
+                                <div class="display-4 h3 days_countdown"><p id="minutes"></p>MINUTES</div>
+                                <div class="display-4 h3 days_countdown">:</div>
+                                <div class="display-4 h3 days_countdown"><p id="seconds"></p>SECONDS</div>
+                            </div>
+                            <br>
+                            <p class="h5 ms-2 ms-lg-3">However, unlike other academic institutions, SP has a lot fewer written papers as it focuses more on hands on projects. In fact, I only have 1 written paper for my EST this year!</p>
+                            <br>
+                            <!-- EST Timetable/Calendar -->
+                            <p class="display-6 ms-2 ms-lg-3">Here is what my EST exam schedule currently looks like:</p>
+                            <div id="calendar" class="col-11 ms-4 table-responsive"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>  
+    </div>
+</body>
+</html>

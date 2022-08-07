@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Javascripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- JS files -->
+    <script src="../js/script.js"></script>
+    <title>Career</title>
+    <!-- Src: https://depositphotos.com/vector-images/letter-r-logo.html -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body data-bs-spy="scroll">
+    <!-- Horizontal navigation for main content -->
+    <nav class="navbar navbar-dark bg-dark custom-position">
+        <!-- removed the data-bs-toggle and data-bs-target so that the 'show' class can be added without the 'collapsing' class -->
+      <div class="d-flex flex-row justify-content-between w-100">
+        <div class="d-flex flex-row">
+            <!-- This icon opens up the vertical navigation. It is only visible on large screens -->
+            <div class="col">
+                <button class="navbar-toggler nav-item mx-3 d-none d-lg-block" type="button" onclick="position_change()">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="col">
+                <a class="nav-link mx-3" href="home.html"><span><i class="bi bi-house-door-fill text-white"></i></span></a>
+            </div>
+        </div>
+        <!-- The other sections -->
+        <div class="d-flex flex-row">
+            <a class="nav-link text-white text-deocration-none" href="index.html"><span>ABOUT</span></a>
+            <a class="nav-link text-white text-deocration-none" href="experience.html"><span>EXPERIENCE</span></a>
+            <a class="nav-link text-white text-deocration-none" href="feedback.html"><span>FEEDBACK</span></a>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Vertical navigation with scrollspy -->
+    <div class="row h-100">
+        <div class="col-2 collapse custom-vertnav">
+            <div class="p-4">
+                <hr class="custom-checker">
+                <div class="container px-0">
+                    <div class="custom-vertnavcontent">
+                        <h5 class="text-white h2">Navigation</h5>
+                        <ul class="nav-pills">
+                            <li class="list-unstyled nav-item"><a class="nav-link" href="#scrollspyHeading1"><span class="custom-navitem h5">Overview</span></a></li>
+                            <li class="list-unstyled nav-item"><a class="nav-link" href="#scrollspyHeading2"><span class="custom-navitem h5">Content</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-bodyBG col-12 scrollspy" data-bs-smooth-scroll="true" data-bs-offset="0" tabindex="0">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="display-1 ms-3"><strong><u>My Future</u></strong></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Table with overview of possible careeers -->
+            <div class="col">
+                <div class="row">
+                    <div class="col-11">
+                        <div class="container-fluid mx-1 mt-2 mb-1 p-0 ms-3 ms-lg-5">
+                            <h4 class="display-2 mb-4" id="scrollspyHeading1">Overivew of possible careers</h4>
+                            <div class="d-flex justify-content-center text-center">
+                                <div class ="table-responsive">
+                                    <table class="table table-borderless table-hover table-dark table-striped m-0">
+                                        <thead>
+                                            <tr>
+                                                <td colspan="4" class="text-center">IT</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Career</th>
+                                                <th>AI Engineer</th>
+                                                <th>Data Analyst</th>
+                                                <th>Software Engineer</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Salary</th>
+                                                <td>$5000-$10,000</td>
+                                                <td>$6000-$13,000</td>
+                                                <td rowspan="2">Varies significantly for different companies</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Working Hours</th>
+                                                <td colspan="2">May be required to work on occasional weekday evenings or weekends, subject to project deadlines</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Next Step in Career Path</th>
+                                                <td>Senior AI Engineer</td>
+                                                <td>Senior Data Analyst/Data Scientist</td>
+                                                <td>Senior Software Engineer/Application Development Manager</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Brief Description</th>
+                                                <td>Work with traditional machine learning techniques to build models that power AI-based applications</td>
+                                                <td>Analyse big volume and large dimensionality data to obtain business insights</td>
+                                                <td>Code programme according to organisational standards and analyse the scalability and security of database</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <hr>     
+                <!-- Three column layout for each of the different career -->
+                <div class="row">
+                    <div class="col-11">
+                        <div class="container-fluid mx-1 mt-2 mb-1 ms-3 ms-lg-5">
+                            <h4 class="display-2 mb-4" id="scrollspyHeading2">More About each career</h4>
+                            <div class="row justify-content-around mx-1 text-center">
+                                <div class="col-sm-9 col-md-5 col-lg-3 mb-3 custom-color">
+                                    <h3>AI Engineer</h3>
+                                    <p>AI Engineers have to work with traditional machine learning techniques like natural language processing and neural networks to build models that power AI-based applications. One example of an application created by AI Engineers is contextual advertising based on sentimental analysis.</p>
+                                    <!-- Img src: https://www.facebook.com/aisingaporepage/photos/a.268488830453722/890326024936663/ -->
+                                    <figure>
+                                        <img class="img-fluid" src="../images/AI_Singapore.png" alt="AI Singapore">
+                                        <figcaption class="figure-caption text-start text-white">AI Singapore is a government-wide partnership established in 2017.</figcaption>
+                                    </figure>
+                                    <p>I think that being an AI Engineer would be an enriching and fun job. With AI and Machine Learning now rapidly changing the face of science, business and everyday life, being an AI Engineer allows me to be at the front of the revolution in an industry with seemingly endless potential.</p>
+                                </div>
+        
+                                <div class="col-sm-9 col-md-5 col-lg-3 mb-3 custom-color">
+                                    <h3>Data Analyst</h3>
+                                    <p>As a data analyst, I would get to collect data from multiple data sources before analysing the data to obtain business insights and recommendations. After that, I may have  to design and generate reports, data visualisation and dashboards that support the target use case/metrics.</p>
+                                    <!-- img src: https://www.greenriver.edu/students/academics/continuing-community-education/certificates/certificate-programs/data-analyst-certificate/ -->
+                                    <figure>
+                                        <img class="img-fluid" src="../images/data_analyst.png" alt="Data Analyst">
+                                        <figcaption class="figure-caption text-start text-white">Data visualisation represents data in the form of graphs and charts such as in the image above.</figcaption>
+                                    </figure>
+                                    <!-- src: https://careerfoundry.com/en/courses/become-a-data-analyst/why-data-analytics/ -->
+                                    <p>I enjoy the prospect of being a data analyst as I want to have a challenging career centred on problem-solving and thinking outside the box. As a data analyst, I would also have the opportunity to work for startups, agencies, large corporates, or even freelance. My skills can be utilized by all kinds of businesses across different industries who want to understand their processes, customers and business. Being able to work in different industries let me constantly learn and advance in my career with practically no limit to how much I can improve my skills and progress in my career as a data analyst.</p>
+                                </div>
+                                <div class="col-sm-9 col-md-5 col-lg-3 mb-3 me-5 custom-color">
+                                    <h3>Software Engineer</h3>
+                                    <p>Being a software engineer means that I get to develop complex software or applications that meet technical and business specifications. Besides working with application programmers to resolve programming issues, software engineers also create and conduct unit tests to ensure that the software and applications produce the desired results.</p>
+                                    <!-- img src: https://www.myskillsfuture.gov.sg/content/portal/en/industry-insights/industry-detail/occupation-listing/occupation-detail.Software-and-Applications-Developer-79348.html -->
+                                    <figure>
+                                        <img class="img-fluid" src="../images/software_engineer.png" alt="Software Engineer">
+                                        <figcaption class="figure-caption text-start text-white">Software engineers tend to use dual monitors so that they can organise their work more easily</figcaption>
+                                    </figure>
+                                    <p>As a Software Engineer, I would be able to secure a career path with endless progress, opportunities and decent pay since Software Development is a booming industry. Software engineering is also known for its fast-paced and innovative nature with businesses constantly looking for more convenience and automation of tedious tasks which means that I get to constantly challenge myself and improve.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

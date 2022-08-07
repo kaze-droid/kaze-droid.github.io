@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Javascripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- JS files -->
+    <script src="../js/feedback.js"></script>
+    <title>Feedback</title>
+    <!-- Src: https://depositphotos.com/vector-images/letter-r-logo.html -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <!-- https://getbootstrap.com/docs/5.0/components/navbar/ -->
+    <nav class="navbar navbar-dark bg-dark custom-position">
+      <div class="d-flex flex-row justify-content-between w-100">
+        <div class="d-flex flex-row">
+            <button class="navbar-toggler nav-item mx-3 d-none" type="button">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="nav-link mx-3" href="home.html"><span><i class="bi bi-house-door-fill text-white"></i></span></a>
+        </div>
+
+        <div class="d-flex flex-row">
+            <a class="nav-link text-white text-deocration-none" href="index.html"><span>ABOUT</span></a>
+            <a class="nav-link text-white text-deocration-none" href="experience.html"><span>EXPERIENCE</span></a>
+            <a class="nav-link text-white text-deocration-none" href="careers.html"><span>CAREER</span></a>
+        </div>
+      </div>
+    </nav>
+
+   <div>
+        <div class="row">
+            <p class="display-1 ms-3"><strong><u>Feedback</u></strong></p>
+        </div>
+        <hr>
+        <div class="col-12">
+            <h2 class="text-center my-3">We would like to hear your feedback!</h2>
+            <!-- Form submits to submit.html -->
+            <form class="custom-form" action="submit.html" method="post" novalidate>
+                <!-- form uses server side validation and bootstrap validation together-->
+                <div class="row justify-content-center">
+                    <div class="col-10 col-md-5">
+                        <div class="container-fluid mx-1 mt-4 mb-1">
+                            <div class="d-flex flex-column justify-content-center">
+                                <div class="mb-4">
+                                    <!-- Email -->
+                                    <div class="mb-3 form-group">
+                                        <input type="email" class="form-control needs-validation" aria-describedby="EmailText" placeholder="Email" name="email" required>
+                                        <small id="EmailText" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                        <div class="valid-feedback">Valid</div>
+                                        <div class="invalid-feedback">Invalid</div>
+                                    </div>
+                                    <!-- Name -->
+                                    <div class="form-group">
+                                        <!-- Uses the regex pattern '+' ensures one or more characters from a-z or A-Z or a space character-->
+                                        <input type="text" class="form-control needs-validation" pattern="^[a-zA-Z ]+$" placeholder="Name" name="name" required>
+                                        <div class="valid-feedback">Valid</div>
+                                        <div class="invalid-feedback">Invalid</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Date (has javascript to ensure date inputted is not after today) -->
+                                <div class="mb-4 form-group">
+                                    <label class="mb-1">Date of visit</label>
+                                    <input type="date" class="form-control" id="custom-date" required>
+                                </div>
+                                
+                                <!-- Radio button -->
+                                <div class="mb-4 form-group">
+                                    <label class="mb-1">Were you able to find what you needed?</label>
+                                    <div>
+                                        <div>
+                                            <input type="radio" class="form-check-input needs-validation" id="RadioYes" name="enjoyability" value="Yes" onInput="nextUnrequired()" required>
+                                            <label for="RadioYes">Yes</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" class="form-check-input needs-validation" id="RadioNo" name="enjoyability" value="No" onInput="nextRequired()" required>
+                                            <label for="RadioNo">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Textbox that becomes required if previous answer was no otherwise it becomes optional -->
+                                <div class="mb-4 form-group">
+                                    <label for="InputWhyNo" class="mb-1">If you answered no, please tell us what info you were seeking?</label>
+                                    <textarea id="InputWhyNo" class="form-control w-75" rows="4"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-10 col-md-5">
+                            <div class="container-fluid mx-1 mt-3 mb-1">
+                                <div class="d-flex flex-column justify-content-center">
+                                    <!-- Dropdown select for how likely for revisit -->
+                                    <div class="mb-4 form-group">
+                                        <label for="InputDropdown" class="mb-1">How likely are you to revisit this site?</label>
+                                        <select name="Likely" id="InputDropdown" class="form-control needs-validation" required>
+                                            <option autofocus disabled selected value="">Select an option</option>
+                                            <option value="Very likely">Very Likely</option>
+                                            <option value="Likely">Likely</option>
+                                            <option value="Unlikely">Unlikely</option>
+                                            <option value="Very unlikely">Very Unlikely</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- Range -->
+                                    <div class="mb-5 form-group">
+                                        <label class="mb-1">On a scale of zero to ten, how user-friendly is this site?</label>
+                                        <div class="container-fluid row">
+                                            <div class="col-9 container-fluid px-0">
+                                                <div class="row">
+                                                    <input class="form-control custom-range needs-validation" type="range" max="10" min="0" oninput="displayer()" aria-describedby="rangehelp">
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-6 text-start px-0">0</div>
+                                                        <div class="col-6 text-end px-0">10</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="custom-display text-center bg-white w-75 h-50 ms-2 d-none d-lg-block border border-dark"><p>5</p></div>
+                                            </div> 
+                                        </div>
+                                        <small id="rangehelp" class="form-text text-muted">Where ten is very user-friendly and zero is not user-friendly at all</small>
+                                    </div>
+                                    
+                                    <!-- Additional comments -->
+                                    <div class="form-group mb-5">
+                                        <label for="InputFinal">Any additional comments or suggestions?</label>
+                                        <textarea id="InputFinal" class="form-control w-75" rows="4"></textarea>
+                                    </div>
+                                    
+                                    <!-- Submit button -->
+                                    <div class="form-group">
+                                        <button class="btn btn-primary" type="submit" onclick="validate_form(event)">Submit</button>
+                                        <!-- Modal to warn user if they are to reset the form -->
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#Modal">Reset</button>
+                                    </div>
+    
+                                    <div class="modal" id="Modal">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                      
+                                            <!-- Modal Header -->
+                                            <div class="modal-header">
+                                              <h4 class="modal-title">Are you sure you want to reset?</h4>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                      
+                                            <!-- Modal body -->
+                                            <div class="modal-body">
+                                                <p>Changes you make will not be saved</p>
+                                            </div>
+                                      
+                                            <!-- Modal footer -->
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button class="btn btn-danger" type="reset" onclick="custom_reset()" data-bs-dismiss="modal">Reset</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+   </div>
+
+</body>
+</html>

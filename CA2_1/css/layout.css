@@ -1,0 +1,147 @@
+/* Overall CSS */
+body {
+    height: 100%;
+    background: radial-gradient(#e18080, #9198e5);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Resize elements */
+
+.w-11 {
+    width: 11%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-89 {
+    width: 89%;
+}
+
+.h-70 {
+    height: 70%;
+}
+
+/* Used to make vert nav scroll properly */
+.custom-checker {
+    width: 0.1%;
+    height: 0.1%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Vert nav */
+.custom-navitem {
+    color: #1c1f23 !important;
+}
+
+.custom-vertnav {
+    background: linear-gradient(90deg,#335980,#335980BD);
+}
+
+li.nav-item > a.active {
+     background-color: #B8CFE6!important;
+}
+
+/* Miscellaneous */
+.custom-invisible {
+    visibility: hidden;
+}
+
+/* CSS for index.html */
+
+/* Embed chess game as iframe */
+iframe {
+    max-height: 800px;
+}
+
+/* CPS test */
+.CPS_screen_overall {
+    border-radius: 100px;
+    border-color: yellow;
+    border-style: dotted;
+}
+
+/* Personality */
+.custom-size {
+    width: 100%;
+    height: 15vw;
+}
+
+.custom-personality::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    /* Src: https://www.istockphoto.com/photos/milky-way */
+    background-image: url("../images/milky_way.jpg");
+    transform: skewY(-45deg);
+}
+
+.custom-personality {
+    transform: perspective(100px) skew(10deg);
+    box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+}
+
+.custom-personality::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #b1b1b1;
+    transform: skewX(-45deg);
+}
+
+/* CSS for experience.html */
+
+/* Card for courses */
+.custom-cardBg {
+    background-color: #B8CFE6 !important;
+}
+
+/* EST calendar */
+.calendar_weekdays {
+    background-color: #005d8f !important;
+}
+
+#calendar_table {
+    background: linear-gradient(180deg, #b8c5da, #9fb3d1);
+}
+
+#calendar_today {
+    background: linear-gradient(90deg,#ffa25b,#f67614);
+}
+
+/* EST Countdown */
+#date_to_EST {
+    border-radius: 50px;
+}
+
+.days_countdown {
+    align-self: center;
+}
+
+/* CSS for careers.html */
+
+/* Each career */
+.custom-color {
+    border-radius: 30px;
+    background: linear-gradient(180deg, #00a1ff, #1d858f);
+    /* creates a shadow (1st and 2nd adjusts distance (x and y respectively), third adjusts blur) */
+    box-shadow: 8px 5px 0 #005d8f;
+}
+
+/* CSS for feedback.html */
+textarea {
+    resize: none;
+}

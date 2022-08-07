@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Javascripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS files -->
+    <link rel="stylesheet" href="../css/layout.css">
+    <!-- JS files -->
+    <script src="../js/script.js"></script>
+    <script src="../js/cps.js" defer></script>
+    <title>About Me</title>
+    <!-- Src: https://depositphotos.com/vector-images/letter-r-logo.html -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body data-bs-spy="scroll">
+    <!-- Horizontal navigation for main content -->
+    <nav class="navbar navbar-dark bg-dark custom-position">
+            <!-- removed the data-bs-toggle and data-bs-target so that the 'show' class can be added without the 'collapsing' class -->
+          <div class="d-flex flex-row justify-content-between w-100">
+            <div class="d-flex flex-row">
+            <!-- This icon opens up the vertical navigation. It is only visible on large screeens -->
+                <div class="col">
+                    <button class="navbar-toggler nav-item mx-3 d-none d-lg-block" type="button" onclick="position_change()">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="col">
+                    <a class="nav-link mx-3" href="home.html"><span><i class="bi bi-house-door-fill text-white"></i></span></a>
+                </div>
+            </div>
+            <!-- The other sections -->
+            <div class="d-flex flex-row">
+                <a class="nav-link text-white text-deocration-none" href="experience.html"><span>EXPERIENCE</span></a>
+                <a class="nav-link text-white text-deocration-none" href="careers.html"><span>CAREER</span></a>
+                <a class="nav-link text-white text-deocration-none" href="feedback.html"><span>FEEDBACK</span></a>
+            </div>
+          </div>
+    </nav>
+    
+    <!-- Vertical navigation with scrollspy -->
+    <div class="row h-100">
+        <div class="col-2 collapse custom-vertnav">
+            <div class="p-4">
+                <hr class="custom-checker">
+                <div class="container px-0">
+                    <div class="custom-vertnavcontent">
+                        <h5 class="text-white h2">Navigation</h5>
+                        <ul class="nav-pills">
+                            <li class="list-unstyled nav-item"><a class="nav-link" href="#scrollspyHeading1"><span class="custom-navitem h5">Chess</span></a></li>
+                            <li class="list-unstyled nav-item"><a class="nav-link" href="#scrollspyHeading2"><span class="custom-navitem h5">Coding</span></a></li>
+                            <li class="list-unstyled nav-item"><a class="nav-link" href="#scrollspyHeading3"><span class="custom-navitem h5">Personality</span></a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-bodyBG col-12 scrollspy" data-bs-smooth-scroll="true" data-bs-offset="0" tabindex="0">
+            <div class="col">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="display-1 ms-2 ms-lg-3"><strong><u>About Me</u></strong></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="col">
+                <div class="row">
+                    <div class="col-10">
+                        <div class="container-fluid mx-1 mt-2 mb-1 p-0 ms-2 ms-lg-5">
+                            <p class="display-6 ms-2">I am a student currently pursuing the Diploma in Applied AI and Analytics</p>
+                            <br>
+                            <p class="h5 ms-2">I love <mark>Chess</mark> and <mark>Coding</mark> which is why I joined SP's mind sports, SEED and SPAI to further my own knowledge of both chess and programming</p>
+                            <!-- Section: Chess -->
+                            <h4 class="display-2 mb-4" id="scrollspyHeading1">Chess</h4>
+                            <p class="h5 ms-2 ms-lg-3">I started playing chess online in 2020 after watching the Queen's Gambit. Chess is a really tough game with a steep learning curve but the fun and interesting nature of the game makes it enjoyable for beginners and seasoned veterans alike.</p>
+                            <br>
+                            <p class="display-6 ms-2 ms-lg-3">Here is a friendly match I played with my friend Jeyakumar Sriram (rating:2082) in which I played White</p>
+                            <!-- Src: https://lichess.org -->
+                            <div class="col-10">
+                                <div class="ratio ratio-4x3">
+                                    <iframe src="https://lichess.org/embed/game/YQDDA0vn?theme=auto&bg=auto"></iframe>
+                                </div>
+                            </div>
+                            <hr>
+                            <!-- Section: Coding -->
+                            <h4 class="display-2 mb-4" id="scrollspyHeading2">Coding</h4>
+                            <p class="h5 ms-2 ms-lg-3">I really enjoy coding because of how challenging it is.</p>
+                            <br>
+                            <p class="h5 ms-2 ms-lg-3">With coding I can sharpen my mind, rewire my brain's neural networks and provide people with great software. With nearly endless impacts and options, I hope to one day empower the world through programming </p>
+                            <br>
+                            <p class="display-6 ms-2 ms-lg-3">Here is a program I coded that calculates your Clicks Per Second (CPS). Try it out below!</p>
+                            <!-- If screen to small to play game -->
+                            <p class="d-block d-md-none h3">Sorry your screen is to small to preview the game. Please try again on a larger device.</p>
+                            <!-- If screen large enough to play the game -->
+                            <div class="d-none d-md-block mt-5">
+                                <div class="row justify-content-around">
+                                    <!-- Screen to be clicked -->
+                                    <div class="col-8 p-0">
+                                        <div class="d-flex flex-column align-items-center">
+                                            <h3>Score: <b id="score">0</b></h3>
+                                            <h3>Time: <b id="StopWatch">0.00</b></h3>
+                                            <img alt="White screen for cps" src="../images/cps_screen.png" width="700" height="350" usemap="#Map" class="CPS_screen_overall">
+                                                <map name="Map">
+                                                <!-- using event as a parameter and e.preventDefault() prevents the page from refreshing everytime -->
+                                                    <area shape="rect" id="cps_screen" onclick="CPS_Start(event)" alt="Click Per Second Test" coords="0,0,700,350" href="#cps_screen">
+                                                </map>
+                                        </div>
+                                    </div>
+                                    <!-- Let user choose the time controls for CPS Test -->
+                                    <div class="col-4 p-0 d-none d-lg-block">
+                                        <div class="d-flex flex-column h-100 justify-content-around w-75 me-2">
+                                            <input type="radio" class="btn-check" name="options" id="option1" value="3" onclick="check_button(this)">
+                                            <label class="btn btn-secondary border border-dark" for="option1">3 Seconds</label>
+        
+                                            <input type="radio" class="btn-check" name="options" id="option2" value="5" onclick="check_button(this)">
+                                            <label class="btn btn-secondary border border-dark" for="option2">5 seconds</label>
+        
+                                            <input type="radio" class="btn-check" name="options" id="option3" value="10" onclick="check_button(this)">
+                                            <label class="btn btn-secondary border border-dark" for="option3">10 Seconds</label>
+        
+                                            <input type="radio" class="btn-check" name="options" id="option4" value="30" onclick="check_button(this)">
+                                            <label class="btn btn-secondary border border-dark" for="option4">30 Seconds</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Invisible button to open the modal since the button is triggered by JS -->
+                            <button type="button" class="btn btn-primary custom-invisible EndTheGame" data-bs-toggle="modal" data-bs-target="#EndGame"></button>
+                            
+                            <!-- The Modal -->
+                            <!-- Make it static so users won't leave by accident after the game -->
+                            <div class="modal" id="EndGame" data-bs-backdrop="static" data-bs-keyboard="false">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                            
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                        <h4 class="modal-title">Check Your Score</h4>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                        <div>You clicked with a speed of <b id="CPS_calculated"></b> CPS</div>
+                                        <div><b id="clicks"></b> click in <b id="time"></b> seconds</div>
+                                        </div>
+                                
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!-- Section: My Personality -->
+                <div class="row">
+                    <div class="col-10">
+                        <div class="container-fluid mx-1 mt-2 mb-1 p-0 ms-3 ms-lg-5">
+                            <h4 class="display-2 mb-4" id="scrollspyHeading3">My Personality</h4>
+                            <div class="display-6 ms-2 ms-lg-3">Here are some of my personality traits:</div>
+                            
+                            <div class="row justify-content-around text-center">
+
+                                <!-- Src: Thumbnail of video: https://www.youtube.com/watch?v=ylsQWQDhja4 -->
+                                <div class="my-5 col-5">
+                                    <div class="card border border-dark custom-cardBg h-100 custom-personality">
+                                        <img class="card-img-top custom-size" src="../images/personality_adaptable.jpg" alt="Adaptable">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Adaptable</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Src: https://www.predictiveindex.com/reference-profile/altruist/ -->
+                                <div class="my-5 col-5">
+                                    <div class="card border border-dark custom-cardBg h-100 custom-personality">
+                                        <img class="card-img-top custom-size" src="../images/personality_altruistic.jpg" alt="Altruistic">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Altruistic</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Src: https://www.ambitious-brand.com/en/haven_197.html -->
+                                <div class="my-5 col-5">
+                                    <div class="card border border-dark custom-cardBg h-100 custom-personality">
+                                        <img class="card-img-top custom-size" src="../images/personality_ambitious.jpg" alt="Ambitious">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Ambitious</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Src: https://en.wikipedia.org/wiki/Curious_Brewing -->
+                                <div class="my-5 col-5">
+                                    <div class="card border border-dark custom-cardBg h-100 custom-personality">
+                                        <img class="card-img-top custom-size" src="../images/personality_curious.jpg" alt="Curious">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Curious</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Src: https://www.123rf.com/photo_51630001_hardworking-word-on-concrette-wall.html-->
+                                <div class="my-5 col-5">
+                                    <div class="card border border-dark custom-cardBg h-100 custom-personality">
+                                        <img class="card-img-top custom-size" src="../images/personality_hardwork.jpg" alt="Hardworking">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Hardworking</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Src: https://www.facebook.com/EMCEEMETHODICAL/ -->
+                                <div class="my-5 col-5">
+                                    <div class="card border border-dark custom-cardBg h-100 custom-personality">
+                                        <img class="card-img-top custom-size" src="../images/personality_methodical.jpg" alt="Methodical">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Methodical</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Src: https://www.thehansindia.com/life-style/importance-of-patience-in-life-697818 -->
+                                <div class="my-5 col-5">
+                                    <div class="card border border-dark custom-cardBg h-100 custom-personality">
+                                        <img class="card-img-top custom-size" src="../images/personality_patience.jpg" alt="Patient">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Patient</h4>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Src: https://www.facultyfocus.com/articles/academic-leadership/how-leaders-get-through-tough-times-six-strategies-for-building-resilience/ -->
+                                <div class="my-5 col-5">
+                                    <div class="card border border-dark custom-cardBg h-100 custom-personality">
+                                        <img class="card-img-top custom-size" src="../images/personality_resilience.jpg" alt="Resilience">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Resilient</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
